@@ -32,6 +32,7 @@
   "scripts": {
     "build": "./node_modules/.bin/coffee --no-header -bco lib src",
     "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register",
-    "publish": "npm run build && npm version patch && npm publish"
+    "patch": "npm run build && npm version patch",
+    "publish": "npm publish"
   }
 }
